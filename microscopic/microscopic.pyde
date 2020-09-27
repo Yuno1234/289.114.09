@@ -35,5 +35,9 @@ def draw():
             a.location.y = 0 - r
         if a.location.y + r < 0:
             a.location.y = height + r
+        
+        
+        if dist(a.location.x, a.location.y, amoebas[a].x, amoebas[a].y) < r + amoebas[a].d / 2:
+            print('a')
                 
         
